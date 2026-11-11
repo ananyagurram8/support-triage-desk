@@ -1,0 +1,145 @@
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 750px;
+  margin: 60px auto;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.app h1 {
+  text-align: center;
+  color: #1e293b;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.app > p {
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 35px;
+  font-size: 16px;
+}
+
+.app form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.app label {
+  font-weight: 600;
+  color: #334155;
+  margin-top: 10px;
+}
+
+.app textarea,
+.app input {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: inherit;
+  box-sizing: border-box;
+  outline: none;
+  background: #ffffff;
+  color: #1e293b;
+}
+
+.app textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.app textarea:focus,
+.app input:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+.app button {
+  margin-top: 15px;
+  padding: 14px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.app button:hover {
+  background: #4338ca;
+}
+
+.app > div {
+  margin-top: 30px;
+  padding: 24px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.app > div h2 {
+  color: #1e293b;
+  margin-top: 0;
+}
+
+.app > div p {
+  color: #475569;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .app {
+    margin: 20px;
+    padding: 24px;
+  }
+
+  .app h1 {
+    font-size: 26px;
+  }
+}
+
+/* Classification category badges */
+
+.category-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Billing - Orange */
+.category-badge.billing {
+  background: #ffedd5;
+  color: #c2410c;
+}
+
+/* Account Access - Blue */
+.category-badge.account {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+/* Delivery - Green */
+.category-badge.delivery {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+/* Manual Review - Red */
+.category-badge.manual-review {
+  background: #fee2e2;
+  color: #b91c1c;
+}
